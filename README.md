@@ -20,7 +20,7 @@ uv sync
 uv run --env-file .env open-webui serve
 ```
 
-首次启动时，Open WebUI 会连接 Hugging Face 下载必要的模型，`example.env` 配置了 Hugging Face 中国大陆镜像加速地址。
+首次启动时，Open WebUI 会连接 Hugging Face 下载必要的模型，`example.env` 配置了 Hugging Face 中国大陆镜像加速地址（<https://hf-mirror.com>）。
 
 完成启动后，访问 http://localhost:8080 即可查看该项目。您可能需要配置外部大模型地址及 API Key，或 Ollama 本地模型 Local Host 服务。
 
