@@ -32,16 +32,17 @@ def main():
             print("-" * 50)
 
             # 实时读取输出并同时写入控制台和文件
-            for line in process.stdout:
-                # 解码字节为字符串
-                text_line = line.decode("utf-8", errors="replace")
+            if process.stdout:
+                for line in process.stdout:
+                    # 解码字节为字符串
+                    text_line = line.decode("utf-8", errors="replace")
 
-                # 写入文件
-                f.write(text_line)
-                f.flush()
+                    # 写入文件
+                    f.write(text_line)
+                    f.flush()
 
-                # 输出到控制台（去掉末尾换行符避免重复）
-                print(text_line, end="")
+                    # 输出到控制台（去掉末尾换行符避免重复）
+                    print(text_line, end="")
 
             process.wait()
 
