@@ -17,7 +17,7 @@ uv sync
 运行以下命令以 `example.env` 环境变量启动项目：
 
 ```bash
-uv run --env-file .env open-webui serve
+uv run --env-file example.env open-webui serve
 ```
 
 首次启动时，Open WebUI 会连接 Hugging Face 下载必要的模型，`example.env` 配置了 Hugging Face 中国大陆镜像加速地址（<https://hf-mirror.com>）。
