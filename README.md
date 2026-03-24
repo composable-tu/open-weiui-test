@@ -1,6 +1,6 @@
 # Open WebUI 项目
 
-> [!info]
+> [!note]
 > 该项目需要您持有兼容 OpenAI API 返回格式的云端大模型 API 地址和 API Key，或本地运行 Ollama 模型服务。
 > 
 > 推荐使用智谱平台，该平台提供的部分模型为免费模型：
