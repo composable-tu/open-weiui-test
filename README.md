@@ -24,10 +24,10 @@ uv sync
 
 根据 Open WebUI 文档，请确保 Python 版本为 Python 3.11。过高或过低的 Python 版本可能存在问题。
 
-运行以下命令以 `example.env` 环境变量启动项目：
+请先将 `example.env` 文件改名为 `.env` 文件，然后运行以下命令以 `example.env` 环境变量启动项目：
 
 ```bash
-uv run --env-file example.env open-webui serve
+uv run --env-file .env open-webui serve
 ```
 
 或：
