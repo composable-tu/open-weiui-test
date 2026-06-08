@@ -10,7 +10,7 @@ updates:
     schedule:
       interval: daily
     groups:
-      action-dependencies:
+      uv-dependencies:
         patterns:
           - "*"
 
