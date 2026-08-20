@@ -1,14 +1,17 @@
+import os
 import subprocess
 import sys
 from pathlib import Path
+import dotenv
 
+dotenv.load_dotenv()
 
 def main():
     # 获取脚本所在目录
     script_dir = Path(__file__).parent.resolve()
 
     # Tika JAR 文件路径
-    tika_jar = script_dir / "tika-server-standard-3.3.0.jar"
+    tika_jar = script_dir / os.getenv("TIKA_SERVER_JAR_NAME", "tika-server-standard-3.3.2.jar")
 
     # 检查 JAR 文件是否存在
     if not tika_jar.exists():
